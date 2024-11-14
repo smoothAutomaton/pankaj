@@ -348,12 +348,12 @@ strong {
             if (charIndex < textLines[lineIndex].length) {
                 currentText += textLines[lineIndex][charIndex++];
                 document.getElementById("typing-text").innerText = currentText;
-                setTimeout(typeText, 50);
+                setTimeout(typeText, 200);
             } else {
                 currentText += "\n";
                 lineIndex++;
                 charIndex = 0;
-                setTimeout(typeText, 300);
+                setTimeout(typeText, 500);
             }
         }
     }
