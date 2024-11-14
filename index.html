@@ -123,18 +123,6 @@
 strong {
     color: #D2691E;  /* A contrasting color for emphasized text */
 }
-		    <style>
-        .typing {
-            font-size: 1.2em;
-            line-height: 1.5;
-            white-space: pre-line;
-            border-right: 2px solid black;
-            animation: blink 0.7s steps(1) infinite;
-        }
-        @keyframes blink {
-            50% { border-color: transparent; }
-        }
-    </style>
 
 		</style>
 
@@ -157,7 +145,7 @@ strong {
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Pankaj Choudhary </h1>
+							<h1>Pankaj Chaudhary </h1>
 							<h2>Inviting you on his Bachalor's Party</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
 							<p><button id="tapToPlay" class="btn btn-default btn-sm">Tap for Bachelor's Theme Song</button></p>
@@ -185,7 +173,30 @@ strong {
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Hello!</h2>
 					<h3>December 7th, 2024</h3>
-<p id="typing-text" class="typing"></p>
+					<p>You’re Invited!<br>
+It’s the bachelor party, let’s start with a cheer,<br>
+We’ve got booze, we’ve got shots, and a pool full of beer!<br>
+
+Leave your fancy suits, put on your trunks,<br>
+We’re here to get wild, like a pack of drunk punks!<br>
+
+Forget the groom’s speech, just pass him a drink,<br>
+We’re celebrating freedom—what do you think?<br>
+
+Shots by the pool, and beers on the deck,<br>
+Let’s drink 'til we forget the word "wreck."<br>
+
+No diets tonight, just pizza and fries,<br>
+Chug it all down and don’t ask us why!<br>
+
+We’re swimming in liquor, diving in shots,<br>
+This party’s on fire, with no turning off!<br>
+
+Let’s raise a glass, let’s make it loud,<br>
+This bachelor bash is the talk of the crowd!<br>
+
+
+					</p>
 				</div>
 			</div>
 		</div>
@@ -208,7 +219,7 @@ strong {
 								<div class="event-wrap animate-box">
 									<h3>The Last Hurraahhhhhhhhh Ceremony</h3>
 									<p>I,<br>
-										Pankaj Choudhary,<br>
+										Pankaj Chaudhary,<br>
 										invite all my friends to join the bachelor's party as per the schedule
 									</p>
 									
@@ -308,39 +319,11 @@ strong {
 	let audio = new Audio("images/song.mp3");
 
 	// Add an event listener for the tap
-	document.getElementById('typing-text').addEventListener('click', function() {
+	document.getElementById('tapToPlay').addEventListener('click', function() {
 		audio.play(); // Play the music after the user taps the button
 		this.style.display = 'none'; // Hide the button once clicked
 	});
 </script>
 
-    <script>
-
-        // Typewriter effect
-        let i = 0;
-        const txt = `
-            "You’re Invited!",
-            "It’s the bachelor party, let’s start with a cheer...",
-            "Leave your fancy suits, put on your trunks...",
-            // Additional lines of text here
-            "Let’s raise a glass, let’s make it loud!"
-        `;
-        const speed = 50;
-
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("typing-text").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
-        typeWriter();
-    </script>
-
-    <!-- Additional scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-</body>
+	</body>
 </html>
