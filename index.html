@@ -1,356 +1,99 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
+<html>
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>The Last Hurraahhhhhhhhh</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<meta name="author" content="Amit" />
-
-
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
 
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
 	<style>
+		.typing {
+			font-size: 1.2em;
+			line-height: 1.5;
+			white-space: pre-line;
+			border-right: 2px solid black;
+			animation: blink 0.7s steps(1) infinite;
+			margin: 20px auto;
+			text-align: center;
+		}
+		@keyframes blink {
+			50% { border-color: transparent; }
+		}
+	</style>
+</head>
 
-#tapToPlay {
-    display: block;  /* Ensure it is a block element */
-    margin: 30px auto; /* Add spacing around the button */
-    padding: 20px;
-    background-color: transparent;
-    color: #fff;  /* White text color */
-    border: 2px solid #fff;  /* White border */
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    text-align: center;
-}
+<body>
 
-/* Hover effect to change the background color when hovered */
-#tapToPlay:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #007bff;  /* Change text color on hover */
-}
-
-		
-    audio {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 8px;
-    }
-
-.invitation-text {
-    text-align: center;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.invitation-heading {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.invitation-message {
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.couple-names {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: #FF6347;  /* A warm color for the names */
-}
-
-.ceremony-details {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #2E8B57;  /* A green color for the ceremony title */
-    margin-bottom: 20px;
-}
-
-.invitation-footer {
-    font-size: 1em;
-    color: #444;
-    font-style: italic;
-}
-
-strong {
-    color: #D2691E;  /* A contrasting color for emphasized text */
-}
-		    <style>
-        .typing {
-            font-size: 1.2em;
-            line-height: 1.5;
-            white-space: pre-line;
-            border-right: 2px solid black;
-            animation: blink 0.7s steps(1) infinite;
-        }
-        @keyframes blink {
-            50% { border-color: transparent; }
-        }
-    </style>
-
-		</style>
-
-	</head>
-	<body>
-
-
-
-
-		
-	
-	
-	<div id="page">
-
-
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpeg);" data-stellar-background-ratio="0.5">
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpeg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Pankaj Choudhary </h1>
-							<h2>Inviting you on his Bachalor's Party</h2>
-							<div class="simply-countdown simply-countdown-one"></div>
-							<p><button id="tapToPlay" class="btn btn-default btn-sm">Tap for Bachelor's Theme Song</button></p>
-							
-							
-						</div>
-						
-					</div>
-
-					</div>
-					
-					</div>
-					
+					<h1>Pankaj Choudhary</h1>
+					<h2>Inviting you to his Bachelor's Party</h2>
+					<p><button id="tapToPlay" class="btn btn-default btn-sm">Tap for Bachelor's Theme Song</button></p>
 				</div>
-				<div>
-					<button id="tapToPlay">Join the Party</button>
-				
-					</div>
+			</div>
+		</div>
 	</header>
 
-
-	<div id="fh5co-couple">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Hello!</h2>
-					<h3>December 7th, 2024</h3>
-<p id="typing-text" class="typing"></p>
-				</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center">
+				<h2>Hello!</h2>
+				<h3>December 7th, 2024</h3>
+				<p id="typing-text" class="typing"></p>
 			</div>
 		</div>
 	</div>
-
-	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpeg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					
-					<h2>Special Events</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-10 col-md-offset-1">
-							<div class="col-md-10 col-sm-8 text-center">
-								<div class="event-wrap animate-box">
-									<h3>The Last Hurraahhhhhhhhh Ceremony</h3>
-									<p>I,<br>
-										Pankaj Choudhary,<br>
-										invite all my friends to join the bachelor's party as per the schedule
-									</p>
-									
-									<div class="event-col">
-										<i class="icon-clock"></i>
-										<span>3:00 PM</span>
-										
-									</div>
-									<div class="event-col">
-										<i class="icon-calendar"></i>
-										<span>Saturday 7th</span>
-										<span>December, 2024</span>
-									</div>
-									<p>
-										The Banyan Tree Villas | Lawn<br>
-										</p>
-									<p>
-										The Banyan Tree Villas, Kalle Road<br>
-										Gaon, Panvel, <br>Maharastra, 410221
-										</p>
-										<p class="map-link" style="text-align:center;">
-											<a href="https://www.google.com/maps/place/The+Banyan+Tree+villas/@18.8830418,73.095202,824m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3be7e7b475affea5:0xaaa7c0cbf7e1b095!8m2!3d18.8830418!4d73.0977769!16s%2Fg%2F11q3yg9rc7?entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-												View Location on Google Maps
-											</a>
-										</p>
-									
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	
-	</div>
-
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
-
-	<!-- Stellar -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-
-	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
-	<script src="js/simplyCountdown.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
 
 	<script>
-		// Set target date to December 7 at 3 PM
-		var targetDate = new Date(2024, 11, 7, 15, 0, 0); // Months are zero-based, so 11 is December
-	
-		// Initialize countdown
-		simplyCountdown('.simply-countdown-one', {
-			year: targetDate.getFullYear(),
-			month: targetDate.getMonth() + 1,
-			day: targetDate.getDate(),
-			hours: targetDate.getHours(),
-			minutes: targetDate.getMinutes(),
-			seconds: targetDate.getSeconds(),
-			enableUtc: false
-		});
-	
-		// jQuery example
-		$('#simply-countdown-losange').simplyCountdown({
-			year: targetDate.getFullYear(),
-			month: targetDate.getMonth() + 1,
-			day: targetDate.getDate(),
-			hours: targetDate.getHours(),
-			minutes: targetDate.getMinutes(),
-			seconds: targetDate.getSeconds(),
-			enableUtc: false
+		// Typewriter text content
+		let i = 0;
+		const txt = `
+			You’re Invited!
+			It’s the bachelor party, let’s start with a cheer,
+			We’ve got booze, we’ve got shots, and a pool full of beer!
+
+			Leave your fancy suits, put on your trunks,
+			We’re here to get wild, like a pack of drunk punks!
+
+			Forget the groom’s speech, just pass him a drink,
+			We’re celebrating freedom—what do you think?
+
+			Shots by the pool, and beers on the deck,
+			Let’s drink 'til we forget the word "wreck."
+
+			No diets tonight, just pizza and fries,
+			Chug it all down and don’t ask us why!
+
+			We’re swimming in liquor, diving in shots,
+			This party’s on fire, with no turning off!
+
+			Let’s raise a glass, let’s make it loud,
+			This bachelor bash is the talk of the crowd!
+		`;
+
+		const speed = 100;
+
+		function typeWriter() {
+			if (i < txt.length) {
+				document.getElementById("typing-text").innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+			}
+		}
+
+		// Start typewriter effect on page load
+		typeWriter();
+
+		// Play audio on button click
+		let audio = new Audio("images/song.mp3");
+		document.getElementById('tapToPlay').addEventListener('click', function() {
+			audio.play();
 		});
 	</script>
-
-
-<script>
-	let audio = new Audio("images/song.mp3");
-
-	// Add an event listener for the tap
-	document.getElementById('typing-text').addEventListener('click', function() {
-		audio.play(); // Play the music after the user taps the button
-		this.style.display = 'none'; // Hide the button once clicked
-	});
-</script>
-
-<script>
-	var i =0;
-    var txt = `
-        "You’re Invited!",
-        "It’s the bachelor party, let’s start with a cheer,",
-        "We’ve got booze, we’ve got shots, and a pool full of beer!",
-        "",
-        "Leave your fancy suits, put on your trunks,",
-        "We’re here to get wild, like a pack of drunk punks!",
-        "",
-        "Forget the groom’s speech, just pass him a drink,",
-        "We’re celebrating freedom—what do you think?",
-        "",
-        "Shots by the pool, and beers on the deck,",
-        "Let’s drink 'til we forget the word \"wreck.\"",
-        "",
-        "No diets tonight, just pizza and fries,",
-        "Chug it all down and don’t ask us why!",
-        "",
-        "We’re swimming in liquor, diving in shots,",
-        "This party’s on fire, with no turning off!",
-        "",
-        "Let’s raise a glass, let’s make it loud,",
-        "This bachelor bash is the talk of the crowd!"
-    `;
-
-    var speed = 200;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("typing-text").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-typeWriter();
-</script>
-
-	</body>
+</body>
 </html>
