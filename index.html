@@ -123,6 +123,18 @@
 strong {
     color: #D2691E;  /* A contrasting color for emphasized text */
 }
+		    <style>
+        .typing {
+            font-size: 1.2em;
+            line-height: 1.5;
+            white-space: pre-line;
+            border-right: 2px solid black;
+            animation: blink 0.7s steps(1) infinite;
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+    </style>
 
 		</style>
 
@@ -173,30 +185,7 @@ strong {
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Hello!</h2>
 					<h3>December 7th, 2024</h3>
-					<p>You’re Invited!<br>
-It’s the bachelor party, let’s start with a cheer,<br>
-We’ve got booze, we’ve got shots, and a pool full of beer!<br>
-
-Leave your fancy suits, put on your trunks,<br>
-We’re here to get wild, like a pack of drunk punks!<br>
-
-Forget the groom’s speech, just pass him a drink,<br>
-We’re celebrating freedom—what do you think?<br>
-
-Shots by the pool, and beers on the deck,<br>
-Let’s drink 'til we forget the word "wreck."<br>
-
-No diets tonight, just pizza and fries,<br>
-Chug it all down and don’t ask us why!<br>
-
-We’re swimming in liquor, diving in shots,<br>
-This party’s on fire, with no turning off!<br>
-
-Let’s raise a glass, let’s make it loud,<br>
-This bachelor bash is the talk of the crowd!<br>
-
-
-					</p>
+<p id="typing-text" class="typing"></p>
 				</div>
 			</div>
 		</div>
@@ -323,6 +312,53 @@ This bachelor bash is the talk of the crowd!<br>
 		audio.play(); // Play the music after the user taps the button
 		this.style.display = 'none'; // Hide the button once clicked
 	});
+</script>
+
+<script>
+    const textLines = [
+        "You’re Invited!",
+        "It’s the bachelor party, let’s start with a cheer,",
+        "We’ve got booze, we’ve got shots, and a pool full of beer!",
+        "",
+        "Leave your fancy suits, put on your trunks,",
+        "We’re here to get wild, like a pack of drunk punks!",
+        "",
+        "Forget the groom’s speech, just pass him a drink,",
+        "We’re celebrating freedom—what do you think?",
+        "",
+        "Shots by the pool, and beers on the deck,",
+        "Let’s drink 'til we forget the word \"wreck.\"",
+        "",
+        "No diets tonight, just pizza and fries,",
+        "Chug it all down and don’t ask us why!",
+        "",
+        "We’re swimming in liquor, diving in shots,",
+        "This party’s on fire, with no turning off!",
+        "",
+        "Let’s raise a glass, let’s make it loud,",
+        "This bachelor bash is the talk of the crowd!"
+    ];
+
+    let currentText = "";
+    let lineIndex = 0;
+    let charIndex = 0;
+    
+    function typeText() {
+        if (lineIndex < textLines.length) {
+            if (charIndex < textLines[lineIndex].length) {
+                currentText += textLines[lineIndex][charIndex++];
+                document.getElementById("typing-text").innerText = currentText;
+                setTimeout(typeText, 50);
+            } else {
+                currentText += "\n";
+                lineIndex++;
+                charIndex = 0;
+                setTimeout(typeText, 300);
+            }
+        }
+    }
+
+    typeText();
 </script>
 
 	</body>
