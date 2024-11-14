@@ -308,14 +308,15 @@ strong {
 	let audio = new Audio("images/song.mp3");
 
 	// Add an event listener for the tap
-	document.getElementById('tapToPlay').addEventListener('click', function() {
+	document.getElementById('typing-text').addEventListener('click', function() {
 		audio.play(); // Play the music after the user taps the button
 		this.style.display = 'none'; // Hide the button once clicked
 	});
 </script>
 
 <script>
-    const textLines = [
+	var i =0;
+    var txt = `
         "You’re Invited!",
         "It’s the bachelor party, let’s start with a cheer,",
         "We’ve got booze, we’ve got shots, and a pool full of beer!",
@@ -337,28 +338,18 @@ strong {
         "",
         "Let’s raise a glass, let’s make it loud,",
         "This bachelor bash is the talk of the crowd!"
-    ];
+    `;
 
-    let currentText = "";
-    let lineIndex = 0;
-    let charIndex = 0;
-    
-    function typeText() {
-        if (lineIndex < textLines.length) {
-            if (charIndex < textLines[lineIndex].length) {
-                currentText += textLines[lineIndex][charIndex++];
-                document.getElementById("typing-text").innerText = currentText;
-                setTimeout(typeText, 200);
-            } else {
-                currentText += "\n";
-                lineIndex++;
-                charIndex = 0;
-                setTimeout(typeText, 500);
-            }
-        }
-    }
+    var speed = 200;
 
-    typeText();
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+typeWriter();
 </script>
 
 	</body>
